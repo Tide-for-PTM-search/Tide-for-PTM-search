@@ -1,6 +1,6 @@
 # Tide-for-PTM-search
 
-Accelerating a Cross-correlation Algorithm in Tide using a single GPU
+Accelerating a Cross-correlation Score Function to Search Modifications using a single GPU
 
 Our method requires GNU C++ compiler (gcc version 4.8.5), and NVIDIA’s CUDA (Compute Unified Device Architecture) version 8.0. 
 
