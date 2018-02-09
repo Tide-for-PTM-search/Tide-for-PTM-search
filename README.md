@@ -21,6 +21,7 @@ Our method recommands CentOS 7.
 > ./OurMethod tide-search --precursor-window 50 -- precursor-window-type ppm --mz-bin-width 0.02 Sample.mzML index
 
 <br>
+
 # Option
 > --precursor-window [float] – Tolerance used for matching peptides to spectra. Peptides must be within +/- 'precursor-window' of the spectrum value. The precursor window units depend upon precursor-window-type. Default = 3.
   
