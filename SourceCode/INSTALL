@@ -1,0 +1,34 @@
+Full directions for installing Crux can be found in doc/users/install-tutorial.html.
+
+Building Crux from source requires a C++ compiler and standard libraries. It
+also requires the programs 'cmake' and 'svn'. To build Crux from a source 
+distribution or a copy checked out from the SVN repository:
+
+1. Run 'cmake .'. This generates all the final 'Makefile' from the 'CMakeLists.txt'.
+   See text below for a description of some useful 'cmake' options.
+2. Run 'make'. This will build Crux. Crux depends on the Proteowizard libraries
+   (http://proteowizard.sourceforge.net). These will automatically be obtained
+   from the Proteowizard SVN repository.
+3. Run 'make install'.
+
+The 'cmake' program accepts several command line options. These are described
+in the CMake documentation, available at http://www.cmake.org.  Three of the
+most useful options are described below.
+
+By default CMake will install Crux in /usr/local. To specify a different
+installation directory use:
+
+cmake -DCMAKE_INSTALL_PREFIX:PATH=<install directory> .
+
+where you should replace '<install directory>' with the full path to the
+root directory where Crux should be installed.
+
+By default CMake will perform a non-debug build of Crux. To turn on debugging
+symbols use:
+
+cmake -DCMAKE_BUILD_TYPE=Debug .
+
+By default CMake will hide most of the processing messages from the compiler
+and linker.  To turn on 'verbose' messages use:
+
+cmake -DCMAKE_VERBOSE_MAKEFILE=ON .
