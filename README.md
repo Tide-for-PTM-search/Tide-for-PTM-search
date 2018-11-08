@@ -14,11 +14,18 @@ Our method recommands CentOS 7.
 
 > bzip2 -d Sample.mzML.bz2
 
+
+> cat HAP01_01.mgf.bz2aa HAP01_01.mgf.bz2ab > HAP01_01.mgf.bz2 
+
+> bzip2 -d HAP01_01.mgf.bz2
+
 # Database indexing
 > ./OurMethod tide-index --missed-cleavages 2 Human_swissProt_v2016.07.fasta index
 
 # Search
 > ./OurMethod tide-search --precursor-window 50 -- precursor-window-type ppm --mz-bin-width 0.02 Sample.mzML index
+
+> ./OurMethod tide-search --precursor-window 50 -- precursor-window-type ppm --mz-bin-width 0.02 HAP01_01.mgf index
 
 <br>
 
