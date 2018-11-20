@@ -15,7 +15,7 @@ Our method recommands CentOS 7.
 > bzip2 -d Sample.mzML.bz2
 
 
-> cat HAP1_01.mgf.bz2aa HAP01_01.mgf.bz2ab > HAP1_01.mgf.bz2 
+> cat HAP1_01.mgf.bz2aa HAP1_01.mgf.bz2ab > HAP1_01.mgf.bz2 
 
 > bzip2 -d HAP1_01.mgf.bz2
 
